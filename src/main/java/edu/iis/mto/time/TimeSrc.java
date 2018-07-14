@@ -17,7 +17,7 @@ public final class TimeSrc implements TimeSource {
 
     @Override
     public DateTime addHours(int hours) {
-        date.plusHours(hours);
+        this.date = date.plusHours(hours);
         return date;
     }
 
